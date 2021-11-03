@@ -68,20 +68,20 @@
 
 .img-1 {
     background-image: url('https://moadlsgen2.blob.core.windows.net/brainlabs/architecture.JPG');
-    width: 400px;
-    height: 400px;
+    width: 900px;
+    height: 700px;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     margin-top: 30px;
 }
 
 .img-2 {
     background-image: url('https://moadlsgen2.blob.core.windows.net/autowiz/tech%20stack.JPG');
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 550px;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
 }
