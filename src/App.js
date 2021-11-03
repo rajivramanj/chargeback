@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
         <Sidebar />
         <Route exact path="/" component={Home} />
-        <Route exact path="/autouiwiz" component={Home} />
+        <Route exact path="/chargeback" component={Home} />
         <Route exact path="/teams-and-solution" component={TeamaAndSolution} />
         <Route exact path="/background" component={Background} />
         <Route exact path="/solution" component={Solution} />
