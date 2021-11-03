@@ -1,0 +1,32 @@
+.team-card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 29%;
+    height: 450px;
+    margin: 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.profile-pic {
+    background-position: top;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.member-name {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: 'Lato';
+}
+
+.member-role {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lato';
+    color: grey;
+}

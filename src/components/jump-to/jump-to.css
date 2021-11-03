@@ -1,0 +1,46 @@
+.jump-to {
+    display: flex;
+    justify-content: space-between;
+    top: 20px;
+    left: 50%;
+    width: 250px;
+    position: absolute;
+}
+
+.jump-to .title {
+    font-family: 'Lato';
+    color: grey;
+}
+
+.jump-to .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.jump-to-nav-li {
+    margin: 0px 0px 10px 0px;
+    font-family: 'Lato';
+}
+
+.jump-to-link {
+    text-decoration: none;
+    font-size: 12px !important;
+}
+
+.jump-to-link:hover .ball-jump-to {
+    display: flex;
+}
+
+.ball-jump-to {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    animation: bounce 0.2s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+    animation-iteration-count: 2;
+    position: absolute;
+    left: -20px;
+    top: 6px;
+    display: none;
+}
