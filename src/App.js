@@ -1,13 +1,12 @@
 import { Sidebar } from "./components/sidebar/sidebar";
 import { BrowserRouter, Route } from 'react-router-dom'
-import './components/sidebar/sidebar.css'
 import Home from "./pages/home/home";
 import Solution from "./pages/solution/solution";
 import TeamaAndSolution from "./pages/team-and-solution/team-and-solution";
 import Background from "./pages/background/background";
-import { useEffect } from "react";
-import Accelerate from "./pages/accelerate/accelerate";
+// import Accelerate from "./pages/accelerate/accelerate";
 import WowFactor from "./pages/wow-factor/wow-factor";
+import './components/sidebar/sidebar.css'
 
 function App() {
 
@@ -20,7 +19,7 @@ function App() {
         <Route exact path="/teams-and-solution" component={TeamaAndSolution} />
         <Route exact path="/background" component={Background} />
         <Route exact path="/solution" component={Solution} />
-        <Route exact path="/accelerate" component={Accelerate} />
+        {/* <Route exact path="/accelerate" component={Accelerate} /> */}
         <Route exact path="/wow-factor" component={WowFactor} />
       </BrowserRouter>
     </div>

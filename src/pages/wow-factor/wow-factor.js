@@ -25,16 +25,15 @@ const WowFactor = () => {
                 <div className="content-container">
                     <motion.h1 initial="hidden"
                         animate="visible"
-                        variants={variants} className="wow-factor-title">Wow Factor and Technology</motion.h1>
+                        variants={variants} className="wow-factor-title">Wow Factor and Benefits</motion.h1>
                     <motion.p initial="hidden"
                         animate="visible"
                         variants={variants} className="wow-factor-content">
                         <div className="features">
-                            <p className="feature">- No manual efforts required to analyze the application structure or to understand the framework.  Also no coding knowledge is required.</p>
-                            <p className="feature">- The solution automates the process of identifying all the different web elements and it also automates the process  to identify all the flows and navigation within a screen and across multiple screens.</p>
-                            <p className="feature">- Machine learning module makes the solution more robust and helps in achieving self-healing eliminating   manual maintenance efforts and the new NLP capabilities help prioritize test scenarios as per the business needs.</p>
-                            <p className="feature">- Interactive dashboards helps analyze various aspects of the solution outputs.</p>
-                            <p className="feature">- A patent has been successfully filed in India and the US and a <a href="https://www.fisglobal.com/-/media/fisglobal/files/pdf/white-paper/Autonomous-UI-Testing-with-AI-White-Paper.pdf" target="_blank" style={{ color: '#0e63e5' }}>white paper</a> has been published in the FIS sales portal. This corresponds to the regionals round solution.</p>
+                            <p className="feature">- Five distinct machine learning models are used to create a voting ensemble approach to improve predictive robustness.  The five models include a Random Forest, two Light GBM (with different hyper-parameters) and two XG Boost (again with different hyper-parameters) algorithms.</p>
+                            <p className="feature">- Event Driven Architecture is used to provide scalability to the solution and reduce costs.  This provides for stateless, server-less, scalable cloud resources.  The components include Azure Blob Storage and Azure Functions.</p>
+                            <p className="feature">- The Dashboard not only provides bulk prediction reports but also provides the capability for individual predictions.</p>
+                            <p className="feature">- The solution also adds an additional layer of business rules with threshold values.  This is brought in to reduce the number of false positives - which can prove expensive to the merchants.</p>
                             <motion.p initial="hidden"
                                 animate="visible"
                                 variants={variants}  style={{ fontSize: 40, fontStyle: 'italic' }}>
@@ -48,32 +47,43 @@ const WowFactor = () => {
             <div className="hovered-content-container">
                 <HoveredExpand title="Novelty and relevance to FIS and its clients">
                     <div className="expand-parent">
-                        <p className="expand-child">- FIS already has GATS and SAFAL as two automation frameworks and these use scripts which take a lot of time to build. </p>
-                        <p className="expand-child">- Our solution adds a flavor of autonomous script-less UI testing which can amplify the benefits manifold</p>
-                        <p className="expand-child">- External clients like JPMC, who leverage GATS, have already expressed an interest in the autonomous UI testing solution that has self-healing.  This solution could bring in revenue to FIS</p>
-                        <p className="expand-child">- Many internal teams like MBP, IBS etc. could benefit from this solution thereby giving a lot of cost savings</p>
-                        <p className="expand-child">- Solution is targeted at Developers and Testers who have any involvement with UI development, testing and maintenance</p>
-                        <p className="expand-child">- “Citizens Testers” as a new concept is being introduced along with “Fusion Teams” – by which anybody with a business understanding of the application can use our solution to do a comprehensive testing with minimum to no training</p>
+                        <p className="expand-child">- This solution is specifically focused on handling friendly fraud.  A lot of products in the market - that fight fraud are not targeted to friendly fraud. </p>
+                        <p className="expand-child">- This provides a very good market opportunity for FIS with more cross sell and subscription based revenue</p>
+                        <p className="expand-child">- Merchants use FIS solutions to receive chargeback information</p>
+                        <p className="expand-child">- FIS already has data readily available of chargeback, merchants and customers.  Currently there are no tools readily available to provide a score for merchants to help them make a decision on representing chargeback - which provides a good opportunity for this solution</p>
                     </div>
                 </HoveredExpand>
-                <HoveredExpand title="New Technology">
+                <HoveredExpand title="Value Addition on Existing POC">
                     <div className="expand-parent">
-                        <p className="expand-child">- Azure ML: using Automated ML which uses a no-code approach.</p>
-                        <p className="expand-child">- Wavemaker: It is a low code development platform for developing a modern, end-to-end app, that works out-of-the-box. This was demonstrated in the recent CTDO conference. Sangy Vatsa and Muhammad Khan are the key stakeholders in FIS for this</p>
-                        <p className="expand-child">- BERT & LSTM Bert has been the state of the art model for NLP tasks. It is based on transformer architecture. We are using the combination of BERT and LSTM to map english language to html elements in a web page</p>
-                        <p className="expand-child">-ULM fit: This is an algorithm about “how” the LSTM models should be trained. First we need the model to understand the contextual and logical structure of the language and then fine tune the model on any downstream task involving that language. For eg, in our case we want to find if two html elements are same or not , so we first need the model to understand html and then it can do the similarity finding task.</p>
+                        <p className="expand-child">- The existing POC looks for a single best model with accuracy of 70%.</p>
+                        <p className="expand-child">- Our solution uses a voting ensemble approach to combine the best of five models to give 82% accuracy</p>
+                        <p className="expand-child">- A dashboard which provides Batch and Realtime predictions was not part of the original POC which we have provided</p>
+                        <p className="expand-child">- Our Dashboard also provides sections for Exploratory Data Analysis and Explainable AI.</p>
                     </div>
                 </HoveredExpand>
-                <HoveredExpand title="Other Tech Stack">
+                <HoveredExpand title="Revenue and Cost Savings Opportunity">
                     <div className="expand-parent">
-                        <p className="expand-child">- Pytorch for Deep Learning, Python, Dash based on Flask, Selenium,</p>
-                        <p className="expand-child">- Azure ML, Cuda, Celery, Redis, CSS, HTML</p>
-                        <img src="https://autoui.blob.core.windows.net/innovate/tech_stack.JPG" style={{ width: '60%' }} />
+                        <p className="expand-child">- Revenue Opportunity</p>
+                        <img src="https://moadlsgen2.blob.core.windows.net/brainlabs/Revenue hypothesis.JPG" style={{ width: '60%' }} />
+                        <p className="expand-child">This data is only for VAP platform</p>
+                        <p className="expand-child">**Assumptions**</p>
+                        <p className="expand-child">Merchants with average chargeback amount less than $20 will not find it feasible to represent. Cost Savings</p>
+                        <p className="expand-child">- Visa Estimates $11.8B is Lost Annually</p>
+                        <p className="expand-child">- 28% of all ecommerce revenue today is lost to friendly fraud.</p>
                     </div>
                 </HoveredExpand>
-                <HoveredExpand title="Security">
+                <HoveredExpand title="New and Nascent Technology">
                     <div className="expand-parent">
-                        <p className="expand-child">Our solution has been hosted on Azure and AWS cloud. The security of both these has been well whetted by FIS. So security has been taken care of.</p>
+                        <p className="expand-child">- Azure ML automated machine learning has been used to determine the top five models and their hyper parameter values.  Automated machine learning is very nascent in the field </p>
+                        <p className="expand-child">- Azure ML is a no code solution that helps you build your models </p>
+                        <p className="expand-child">- Event Driven architecture has been leveraged to the maximum.  This new architecture of stateless, server-less code is creating a lot of buzz in FIS senior management and in the industry</p>
+                    </div>
+                </HoveredExpand>
+                <HoveredExpand title="Benefits for Merchants and Acquirers">
+                    <div className="expand-parent">
+                        <p className="expand-child">- The Solution provides Data driven decision making which accounts for merchant specific characteristics.</p>
+                        <p className="expand-child">- The Solution would drive More Revenue & Fewer chargeback fees</p>
+                        <p className="expand-child">- Less Turnaround time to process or fight dispute</p>
                     </div>
                 </HoveredExpand>
             </div>

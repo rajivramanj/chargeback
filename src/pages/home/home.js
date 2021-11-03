@@ -5,7 +5,7 @@ const Home = () => {
 
     // const texts = ['Making Automated UI Testing “Autonomous”','Teams', 'Problem Statement Definition', 'Solution', 'Accelerate Next', 'Wow Factor']
 
-    const texts = ['Making Automated UI Testing “Autonomous”']
+    const texts = ['Guide merchants on chargeback representment']
 
     const [active, setActive] = useState(0)
 
@@ -20,7 +20,7 @@ const Home = () => {
     return (
         <div className="home">
             <div className="navbar">
-                <p className="logo">AutoUI_Wizards</p>
+                <p className="logo">Chargeback</p>
                 <p></p>
             </div>
             <div className="center-container">

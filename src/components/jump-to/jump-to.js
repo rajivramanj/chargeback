@@ -25,10 +25,10 @@ const JumpTo = (props) => {
     };
 
     const items = [
-        { name: 'Problem Statement', navigateTo: '/background' },
+        { name: 'Background and Objective', navigateTo: '/background' },
         { name: 'Solution', navigateTo: '/solution' },
         { name: 'Wow Factor', navigateTo: '/wow-factor' },
-        { name: 'Accelerate Next', navigateTo: '/accelerate' },
+        // { name: 'Accelerate Next', navigateTo: '/accelerate' },
         { name: 'Team', navigateTo: '/teams-and-solution' },
     ];
     return (

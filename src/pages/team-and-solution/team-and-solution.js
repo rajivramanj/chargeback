@@ -30,7 +30,7 @@ const TeamaAndSolution = () => {
                         animate="visible"
                         variants={variants} className="solution-content">
                         <div className="features">
-                            <p className="feature">We are the AutoUI Wizards who have developed the Autonomous UI Testing Solution using Machine Learning.</p>
+                            <p className="feature">We are the Intelligent Automation COE AI/ML team who have developed this solution.</p>
                         </div>
                     </motion.p>
                 </div>
@@ -38,22 +38,17 @@ const TeamaAndSolution = () => {
 
             <div className="members-container">
                 <TeamMember
-                    name="Harsh Sharma"
+                    name="Rahul Nandanwar"
                     role="The Machine Learning specialist"
-                    imageUrl="https://moadlsgen2.blob.core.windows.net/brainlabs/harsh.jpg" />
+                    imageUrl="https://moadlsgen2.blob.core.windows.net/brainlabs/rahul2.png" />
                     <TeamMember
                         name="Yogendra Katheria"
                         role="The Machine Learning specialist and the Python UI go-to guy"
                         imageUrl="https://moadlsgen2.blob.core.windows.net/brainlabs/yogendra.jpg" />
                 <TeamMember
-                    name="Seerajudeen Sheik Ahamed"
-                    role="The Python wiz kid of the team"
-                    imageUrl='https://moadlsgen2.blob.core.windows.net/brainlabs/seeraj.jpg' />
-                <TeamMember
-                    name="Balakrishnan Ramasamy"
-                    role="The emerging technologies evangelist and UI/UX developer"
-                    imageUrl="https://moadlsgen2.blob.core.windows.net/brainlabs/bala.jpg"
-                />
+                    name="Harsh Sharma"
+                    role="The Machine Learning specialist"
+                    imageUrl='https://moadlsgen2.blob.core.windows.net/brainlabs/harsh.jpg' />
                 <TeamMember
                     name="Rajiv Ramanjani"
                     role="The Captain of the team."

@@ -31,10 +31,11 @@ const Solution = () => {
                         animate="visible"
                         variants={variants} className="solution-content">
                         <div className="features">
-                            <p className="feature">- Autonomous UI testing automates UI testing from the beginning with minimum inputs and also automates the extraction of elements and flows</p>
-                            <p className="feature">- It brings in AI/ML for maintenance and analytics while handling the changes from one release to another using self-healing AI concepts</p>
-                            <p className="feature">- The testing can be optimized to a smaller sub-set of test scenarios so that only the relevant permutations of test scenarios are executed in some situations.  Alternatively – all scenarios generated as combinations can be comprehensively executed automatically.</p>
-                            <p className="feature">- Interactive Dashboard make available the output through representative reports.</p>
+                            <p className="feature">- Receive Chargeback Data on periodic cadence</p>
+                            <p className="feature">- Predict the likelihood of a win or a loss if a merchant should make a representment to the chargeback or not</p>
+                            <p className="feature">- Generate reports with advisories to the merchant with information to help make a decision.</p>
+                            <p className="feature">- Reports would contain details of win/loss percentage along with overall recommendation.</p>
+                            <p className="feature">- The solution adds a layer of business rules to bring in threshold to reduce false positives.</p>
                         </div>
                     </motion.p>
                     <motion.p initial="hidden"
@@ -48,41 +49,33 @@ To be able to do that - we need the right tools for our Employees</q>
                 </div>
             </div>
             <div className="hover-elements-container">
-                <HoveredExpand title="Autonomous UI Testing Workflow – Initial Setup" color="#000">
+                <HoveredExpand title="Architecture and Technical Flow" color="#000">
                     <div className="expand-parent">
-                        <p className="expand-child">For the first run, the UI-driver module will be executed. This is a Python-based program that runs and identifies all the flows automatically for all screens in a given URL and stores them as a reference in a database. The result of the execution is analyzed and displayed on a dashboard containing information about the flows the program identified and executed and their corresponding results. In parallel, the Deep Learning model is trained and engaged in self-healing for the next run.</p>
+                        <p className="expand-child">- Event Driven Choreography and Architecture is used.</p>
+                        <p className="expand-child">- Daily chargeback data is expected to be uploaded to the cloud once a day.  The upload would happen to the Azure Blob Storage.</p>
+                        <p className="expand-child">- The data upload to the Blob would trigger the Azure Functions code which is stateless and server-less.</p>
+                        <p className="expand-child">- This code would do the Machine Learning predictions and finally upload the results as an output csv in the Azure Blob Storage.</p>
+                        <p className="expand-child">- This csv is pulled by the front-end Dashboard which shows the prediction report.</p>
                         <div className="flex-container">
                             <div className="img-1" />
                         </div>
                     </div>
                 </HoveredExpand>
-                <HoveredExpand title="Autonomous UI Testing Workflow – Regular Execution" color="#000">
+                <HoveredExpand title="Technology Stack" color="#000">
                     <div className="expand-parent">
-                        <p className="expand-child">For each iteration the UI-driver module references the database for base flows and identifies the changes in the new UI. The changes are then matched against the original UI using the Deep Learning AI model trained earlier. The model then heals the flows as needed for the updated interface. Newly added features are also identified, which are sent along with updated flows to the UI-driver module for execution to analyze and store the results.The comparisons and inference related to the previous and current execution, along with the details of self-healing and updated features, are shown on a user friendly dashboard. The dashboard enables the user to provide feedback to the solution, a process which makes the tool even more robust and accurate over time</p>
                         <div className="flex-container">
                             <div className="img-2" />
                         </div>
+                        <p className="expand-child"><b>Code Written In</b></p>
+                        <p className="expand-child">- Python, HTML, CSS</p>
+                        <p className="expand-child"><b>Open Source and Proprietary</b></p>
+                        <p className="expand-child">- Proprietary - Azure Cloud Services</p>
                     </div>
                 </HoveredExpand>
-                <HoveredExpand title="Deep Learning Implementation of Self Healing" color="#000">
+                <HoveredExpand title="Security" color="#000">
                     <div className="expand-parent">
-                        <p className="expand-child">- We have extracted locators of HTML elements from multiple websites consisting a total of approximately 8000 records.</p>
-                        <p className="expand-child">- We have trained a Seq to Seq Deep Learning Model (ULM Fit) using Azure ML on the data.</p>
-                        <p className="expand-child">- ULM Fit is used here to make the model understand the semantics of HTML locators.</p>
-                        <p className="expand-child">- Model is then fine tuned to find the similarity between the two HTML locators.</p>
-                        <p className="expand-child">- Model is used for self healing to recognize the changes in the recorded UI Screen and provides the similarity score on the basis of the comparison.</p>
-                    </div>
-                </HoveredExpand>
-                <HoveredExpand title="ULM Fit" color="#000">
-                    <img className="ulm-img" src="https://moadlsgen2.blob.core.windows.net/brainlabs/Flow3.png" />
-                </HoveredExpand>
-                <HoveredExpand title="New Innovation in 48 hours" color="#000">
-                    <div className="expand-parent">
-                    <p className="expand-child">Additions include new functionality and enhancements such as</p>
-                        <p className="expand-child">- While the regional solution executed test scenarios of all combinations across all elements : the new functionality that we have added is to make it more intelligent to just determine the correct combinations which are prioritized and thereby save time to complete the test execution.  The testing now happens much more RAPIDLY. The user just has to provide what is needed to be tested in plain English language and our solution will use the enhanced AI/ Machine Learning capability to execute the steps mentioned without writing any test scripts. As it is intelligently converting the text into execution step and automatically executing it, we are calling it INTELLIGENT AUTONOMOUS TESTING.</p>
-                        <p className="expand-child">- In the earlier version we were just making the solution work for an input text box and a button. But now we are making our solution work for all possible form fields available in a page. This is were we have leveraged Wavemaker. </p>
-                        <p className="expand-child">- We have revamped the dashboard completely in Wavemaker - with supporting charts using D3.js</p>
-                        <p className="expand-child">- Regional solution had the data stored locally in csv. Since our data has become quite exhaustive due to more controls, we have adopted COULD NATIVE database by using Postgres on Azure.</p>
+                        <p className="expand-child">- The data comes from internal FIS sources.</p>
+                        <p className="expand-child">- The cloud tool stack are from Microsoft - Azure FIS Private Cloud whose security has been well reviewed and whetted.</p>
                     </div>
                 </HoveredExpand>
             </div>
